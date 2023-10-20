@@ -1,0 +1,179 @@
+body{
+    background-color:#66D0FF;
+  }
+  h1 {
+    font-family: 'Electrolize', sans-serif;
+    position: fixed;
+    font-size: 11vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 10px;
+  }
+  .playbutton{
+    position: fixed;
+    top: 47%;
+    left: 80%;
+  }
+  .cloud{ 
+     margin-top:150px;
+     margin-left: 150px;
+     width:350px;
+     height:120px;
+     background:#ECEFF1;
+     box-shadow: 10px 10px rgba(0,0,0,0.2);
+     border-radius:100px;
+  }
+  .cloud::after, .cloud::before{
+      content:"";
+      position:relative;
+      display:inline-block;
+      background:inherit;
+      border-radius:inherit;
+  }
+  .cloud::after{
+      width:100px;
+      height:100px;
+      top:-115px;
+      left:-120px;
+  }
+  .cloud::before{
+      width:180px;
+      height:180px;
+      top: -70px;
+      left:140px;
+  }
+.cloud.one{
+    margin-top:150px;
+    margin-left: 150px;
+}
+.cloud.two{
+    margin-top:-10rem;
+    margin-left: 40rem;
+}
+.cloud.three{
+    position: relative;
+    margin-top:3rem;
+    margin-left: 25rem;
+}
+.cartman.head{
+    width: 10em;
+    height: 10em;
+    margin-bottom: -3em;
+    margin-left: 1em;
+    background: #fddebf;
+    border-radius: 100%;
+    position: relative;
+    z-index: 2;
+}
+.cartman.body{
+    position: relative;
+    width: 13em;
+    height: 9em;
+    right: 0.2em;
+    bottom: 0.3em;
+    background: #e12740;
+    border-radius: 100%;
+    z-index: 1;
+}
+.cartman.hands::after, .cartman.hands::before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+}
+.cartman.hands::before{
+    position: relative;
+    width: 3em;
+    height: 3em;
+    top: -90px;
+    left: -1em;
+    background: #f7d919;
+    border-radius: 100%;
+    z-index: 2;
+}
+.cartman.hands::after{
+    position: relative;
+    width: 3em;
+    height: 3em;
+    top: -5.5em;
+    left: 8em;
+    background: #f7d919;
+    border-radius: 100%;
+    z-index: 1;
+}
+.cartman.thumb{
+    position: relative;
+    width: 1em;
+    height: 2em;
+    top: -9.5em;
+    left: 13em;
+    rotate: 35deg;
+    background: #f7d919;
+    border-top-left-radius:40%;
+    border-top-right-radius:40%;
+    z-index: 1;
+}
+.cartman.trousers{
+    width: 10em;
+    height: 3em;
+    border-radius: 40%;
+    background: olive;
+    margin-top: -7.8em;
+    margin-left: 1.2em;
+}
+.cartman.shoe::after, .cartman.shoe::before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+}
+.cartman.cartman.shoe::before{
+    width: 5em;
+    height: 1.2em;
+    border-radius: 30%;
+    background: black;
+    bottom: 1em;
+    left: 1.2em;
+    rotate: 5deg;
+}
+.cartman.cartman.shoe::after{
+    width: 5em;
+    height: 1.2em;
+    border-radius: 30%;
+    background: black;
+    bottom: 1em;
+    left: 1.2em;
+    rotate: -5deg;
+}
+.cartman.hat::after, .cartman.hat::before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+}
+.cartman.hat::before{
+    width: 10em;
+    height: 5em;
+    margin-bottom: -5em;
+    margin-left: 1em;
+    background: #06b3c0;
+    border-top-left-radius: 105em;
+    border-top-right-radius: 105em;
+    position: relative;
+    z-index: 3;
+}
+.cartman.hat::after{
+    width: 3em;
+    height: 3em;
+    margin-bottom: -1.5em;
+    margin-left: -6.5em;
+    background: #f7d919;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+}
