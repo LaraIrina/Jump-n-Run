@@ -1,21 +1,38 @@
 body{
     background-color:#66D0FF;
-    width: 100%;
+  }
+  h1 {
+    font-family: 'Electrolize', sans-serif;
+    position: fixed;
+    font-size: 8vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 10px;
+  }
+  .playbutton{
+    position: fixed;
+    top: 47%;
+    left: 80%;
+  }
+  .glancebutton{
+    position: fixed;
+    top: 47%;
+    left: 80%;
   }
   .cloud{ 
-    position: relative;
      margin-top:150px;
      margin-left: 150px;
      width:350px;
      height:120px;
      background:#ECEFF1;
-     box-shadow:-10px -15px rgba(0,0,0,0.2);
+     box-shadow: 10px 10px rgba(0,0,0,0.2);
      border-radius:100px;
-     transform-origin: top left;
-     transform: scale(0.5) scaleY(-1) scaleX(-1); /* Spiegelung horizontal, ohne die Größe zu ändern */
   }
   .cloud::after, .cloud::before{
       content:"";
+      position:relative;
       display:inline-block;
       background:inherit;
       border-radius:inherit;
@@ -23,43 +40,27 @@ body{
   .cloud::after{
       width:100px;
       height:100px;
-      top:-125px;
+      top:-115px;
       left:-120px;
   }
   .cloud::before{
       width:180px;
       height:180px;
-      top: -60px;
+      top: -70px;
       left:140px;
   }
 .cloud.one{
-    margin-top:15rem;
-    margin-left: 15rem;
-    /*Animation*/
-    -webkit-border-radius: 200px;
-    animation: cloud 20s linear infinite;
-    -webkit-animation: cloud 20s linear infinite;
+    margin-top:150px;
+    margin-left: 150px;
 }
 .cloud.two{
     margin-top:-10rem;
     margin-left: 40rem;
-    /*Animation*/
-    -webkit-border-radius: 200px;
-    animation: cloud 20s linear infinite;
-    -webkit-animation: cloud 20s linear infinite;
-
 }
 .cloud.three{
-    margin-top:1em;
-    margin-left: 80em;
-         /*Animation*/
-         -webkit-border-radius: 200px;
-         animation: cloud 22s linear infinite;
-         -webkit-animation: cloud 22s linear infinite;
-}
-@keyframes cloud {
-	0% { right: -100%; }
-	100% { right: 70%; }
+    position: relative;
+    margin-top:3rem;
+    margin-left: 25rem;
 }
 .character {
     position: fixed;
@@ -67,8 +68,6 @@ body{
     left: 15%;
     transform: translate(-50%, -50%);
     z-index: 1; 
-    transform-origin: top left; /* Setzen Sie den Ursprung der Transformation auf die obere linke Ecke */
-    transform: scale(0.7); /* Ändern Sie den Skalierungsfaktor nach Bedarf */
   }
 .cartman.head{
     width: 10em;
@@ -191,106 +190,3 @@ body{
     position: relative;
     z-index: 3;
 }
-.street{
-    height: 7em;
-    width: 100%;
-    background-color: #AD8E70;
-    position: fixed;
-    bottom: 0%;
-}
-.tree.one {
-    position: absolute;
-    background-color:#003049;
-    width:8px;
-    height: 40px;
-    bottom:12%;
-    left: 145px;
-    z-index: 0;
-    transform: scale(1.3);
-}
-.tree.two{
-    position: absolute;
-    background-color:#003049;
-    width:8px;
-    height: 40px;
-    bottom:12%;
-    left: 70%;
-    z-index: 0;
-    transform: scale(1.1);
-}
-.tree.three{
-    position: absolute;
-    background-color:#003049;
-    width:8px;
-    height: 40px;
-    bottom:12%;
-    left: 100%;
-    z-index: 0;
-    transform: scale(1.5);
-}
-  .tree:before {
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-bottom: 120px solid #003049;
-    top:-120px;
-    left:-70px;
-  }
-  .tree:after {
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 95px solid #386641;
-    top:-103px;
-    left:-55px;
-  }
-  .tree1 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-bottom: 120px solid #003049;
-    top:-160px;
-    left:-70px;
-    z-index:1;
-  }
-  .tree1:before {
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 95px solid #6a994e;
-    top:17px;
-    left:-60px;
-  }
-  .tree2 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 65px solid transparent;
-    border-right: 65px solid transparent;
-    border-bottom: 110px solid #003049;
-    top:-200px;
-    left:-60px;
-    z-index:2;
-  }
-  .tree2:before {
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 85px solid #386641;
-    top:17px;
-    left:-50px;
-  }
