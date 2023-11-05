@@ -1,19 +1,25 @@
 body{
     background-color:#66D0FF;
-    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   .cloud{ 
-    position: relative;
-     margin-top:150px;
-     margin-left: 150px;
-     width:350px;
-     height:120px;
-     background:#ECEFF1;
-     box-shadow:-10px -15px rgba(0,0,0,0.2);
-     border-radius:100px;
-     transform-origin: top left;
-     transform: scale(0.5) scaleY(-1) scaleX(-1); /* Spiegelung horizontal, ohne die Größe zu ändern */
-  }
+    position: absolute;
+    top: 150px; 
+    left: 150px; 
+    width: 350px;
+    height: 120px;
+    background: #ECEFF1;
+    box-shadow: -10px -15px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    transform-origin: top left;
+    transform: scale(0.5) scaleY(-1) scaleX(-1); /* Spiegelung horizontal, ohne die Größe zu ändern */
+    /* Animation */
+    -webkit-border-radius: 200px;
+    animation: cloud 18s linear infinite;
+    -webkit-animation: cloud 18s linear infinite;
+}
   .cloud::after, .cloud::before{
       content:"";
       display:inline-block;
@@ -36,6 +42,7 @@ body{
     margin-top:15rem;
     margin-left: 15rem;
     /*Animation*/
+    border-radius:100px;
     -webkit-border-radius: 200px;
     animation: cloud 20s linear infinite;
     -webkit-animation: cloud 20s linear infinite;
@@ -44,6 +51,7 @@ body{
     margin-top:-10rem;
     margin-left: 40rem;
     /*Animation*/
+    border-radius:100px;
     -webkit-border-radius: 200px;
     animation: cloud 20s linear infinite;
     -webkit-animation: cloud 20s linear infinite;
@@ -52,19 +60,20 @@ body{
 .cloud.three{
     margin-top:1em;
     margin-left: 80em;
-         /*Animation*/
-         -webkit-border-radius: 200px;
-         animation: cloud 22s linear infinite;
-         -webkit-animation: cloud 22s linear infinite;
+    /*Animation*/
+    border-radius:100px;
+    -webkit-border-radius: 200px;
+    animation: cloud 22s linear infinite;
+    -webkit-animation: cloud 22s linear infinite;
 }
 @keyframes cloud {
-	0% { right: -100%; }
-	100% { right: 70%; }
+	0% { left: -100%; }
+	100% { left: 70%; }
 }
 .character {
     position: fixed;
-    top: 70%;
-    left: 15%;
+    left: 50px;
+    bottom: -100px;
     transform: translate(-50%, -50%);
     z-index: 1; 
     transform-origin: top left; /* Setzen Sie den Ursprung der Transformation auf die obere linke Ecke */
