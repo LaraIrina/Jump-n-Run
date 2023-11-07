@@ -1,3 +1,20 @@
+//Error Message on Error Page
+$(document).ready(typeMessage);
+function typeMessage() {
+  var txt = "Bugger! This is currently not available...";
+  var i = 0;
+  var speed = 50;
+
+  function addNextCharacter() {
+    if (i < txt.length) {
+      $("#errortext").append(txt.charAt(i));
+      i++;
+      setTimeout(addNextCharacter, speed);
+    }
+  }
+  addNextCharacter();
+}
+
 $(".playbutton").on("click", function() {
     window.location.href = "./error.html";
   });
