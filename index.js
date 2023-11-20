@@ -18,7 +18,7 @@ $(".playbutton").on("click", function() {
     window.location.href = "./error.html";
   });
   $(".glancebutton").on("click", function() {
-    window.location.href = "./game_new.html";
+    window.location.href = "./game.html";
   });
 //tickle cartman to let him flick the finger
 $('.character').on("click",function() {
